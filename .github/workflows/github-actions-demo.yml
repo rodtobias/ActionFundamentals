@@ -1,10 +1,8 @@
 name: GitHub Actions Demo
 on:
   push:
-    branches: 
-      - main
-    paths-ignore: 
-      - '.github/**'
+    branches: [ main ]
+    paths-ignore: [.github/**]
   pull_request:
     branches: [ main ]
   schedule:
