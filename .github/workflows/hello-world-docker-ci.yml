@@ -4,7 +4,7 @@ on:
     branches: [ main ]
   push:
     branches: [ main ]
-    paths: [ hello-world-docker-action/** ]
+    paths: [ GitHubBootCamp/hello-world-docker-action/** ]
   workflow_dispatch:
  
 jobs:
@@ -16,7 +16,7 @@ jobs:
  
       - name: Run my own container action
         id: hello-action
-        uses: ./hello-world-docker-action
+        uses: ./GitHubBootCamp/hello-world-docker-action
         with:
           who-to-greet: '@wulfland'
  
